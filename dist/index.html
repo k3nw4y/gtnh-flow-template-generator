@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>template generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <section class="contact-form">
+    <h1>GTNH-flow </h1>
+    <p>Use this to make recipe templates.</p>
+
+    <form>
+      <div class="input-group">
+        <label for="m">Machine</label>
+        <input id="m" name="m" type="text" />
+      </div>
+      <div class="input-group">
+        <label for="tier">Machine Tier</label>
+        <select id="tier" name="tier">
+          <option>ULV</option>
+          <option>LV</option>
+          <option>MV</option>
+          <option>HV</option>
+          <option>EV</option>
+          <option>IV</option>
+          <option>LUV</option>
+          <option>ZPM</option>
+          <option>UV</option>
+          <option>UHV</option>
+          <option>UEV</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="eut">EU/t</label>
+        <input id="eut" name="eut" type="number" />
+      </div>
+      <div class="input-group">
+        <label for="dur">Duration</label>
+        <input id="dur" name="dur" type="number" />
+      </div>
+      <div class="input-group">
+        <label for="number">Number of max machines(optional)</label>
+        <input id="number" name="number" type="number" />
+      </div>
+      <button type="submit">Generate</button>
+    </form>
+  </section>
+
+  <div class="results">
+    <h2>Output  </h2>
+    <pre></pre>
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.13.0/polyfill.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
